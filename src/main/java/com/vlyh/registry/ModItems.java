@@ -1,7 +1,10 @@
 package com.vlyh.procrafter.registry;
 
-import com.vlyh.procrafter.items.ModItems;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
