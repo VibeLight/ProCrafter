@@ -2,6 +2,8 @@ package com.vlyh.procrafter;
 
 import com.vlyh.procrafter.registry.ModBlocks;
 import com.vlyh.procrafter.registry.ModItems;
+import com.vlyh.procrafter.registry.ModEntities;
+import com.vlyh.procrafter.registry.ModSound;
 import net.fabricmc.api.ModInitializer;
 
 public class ProCrafterMod implements ModInitializer {
