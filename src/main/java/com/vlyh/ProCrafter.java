@@ -7,12 +7,12 @@ import net.fabricmc.api.ModInitializer;
 public class ProCrafterMod implements ModInitializer {
     public static final String MOD_ID = "procrafter";
 
-    @Override
+@Override
     public void onInitialize() {
-        // アイテムやブロックの登録
+        // レジストリを初期化
         ModItems.registerItems();
         ModBlocks.registerBlocks();
-
-        System.out.println("ProCrafter API initialized!");
+        ModBlockEntities.registerBlockEntities();
+        ModScreenHandlers.registerScreenHandlers();
     }
 }
