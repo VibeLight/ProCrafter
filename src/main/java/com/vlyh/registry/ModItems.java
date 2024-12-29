@@ -9,11 +9,15 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
-    public static final Item MAGIC_WAND = new Item(new FabricItemSettings().group(ItemGroup.MISC).maxCount(1));
+    public static final Item MAGIC_DUST = new Item(new FabricItemSettings().group(ItemGroup.MATERIALS));
+    public static final Item NEOMAGIC_DUST = new Item(new FabricItemSettings().group(ItemGroup.MATERIALS));
     public static final Item MAGIC_SWORD = new SwordItem(ToolMaterials.IRON, 10, -2.4f, new FabricItemSettings().group(ItemGroup.COMBAT));
+    public static final Item GRINGHAM_SMALLORE = new Item(new FabricItemSettings().group(ItemGroup.MATERIALS));
     
     public static void registerItems() {
-        Registry.register(Registry.ITEM, new Identifier("procrafter", "magic_wand"), MAGIC_WAND);
+        Registry.register(Registry.ITEM, new Identifier("procrafter", "magic_dust"), MAGIC_DUST);
+        Registry.register(Registry.ITEM, new Identifier("procrafter", "neomagic_dust"), NEOMAGIC_DUST);
         Registry.register(Registry.ITEM, new Identifier("procrafter", "magic_sword"), MAGIC_SWORD);
+        Registry.register(Registry.ITEM, new Identifier("procrafter","gringham_smallore"),GRINGHAM_SMALLORE);
     }
 }
