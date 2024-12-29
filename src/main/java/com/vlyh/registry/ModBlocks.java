@@ -10,6 +10,7 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
     public static final Block MAGIC_MACHINE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0f));
     public static final Block CABBAGE = new CustomCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT));
+    
     public static final BlockEntityType<MagicMachineBlockEntity> MAGIC_MACHINE_ENTITY = Registry.register(
         Registry.BLOCK_ENTITY_TYPE,
         new Identifier("procrafter", "magic_machine"),
