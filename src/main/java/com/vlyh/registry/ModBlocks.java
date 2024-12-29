@@ -20,4 +20,11 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier("procrafter", "magic_machine_block"), MAGIC_MACHINE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier("procrafter", "magic_machine_block"), new BlockItem(MAGIC_MACHINE_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
     }
+    public static final Block CABBAGE = new CustomCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT));
+
+    public static void registerBlocks() {
+        Registry.register(Registries.BLOCK, new Identifier("procrafter", "cabbage"), CABBAGE);
+    }
+    
+
 }
