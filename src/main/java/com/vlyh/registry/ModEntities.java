@@ -1,4 +1,4 @@
-package com.vlyh.procrafter.registry.entities;
+package com.vlyh.procrafter.registry;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.MobEntity;
